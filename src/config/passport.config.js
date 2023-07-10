@@ -61,7 +61,7 @@ const initializePassport = () => {
     
               // Generar hash de la contraseña
               const pswHashed = await createHashValue(password);
-             // const hashedPassword = await bcrypt.hash(password, 10);
+          
     
               // Crear el nuevo usuario
               const newUser = await UserModel.create({
