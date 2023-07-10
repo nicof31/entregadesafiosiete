@@ -4,8 +4,9 @@ import GithubStrategy from 'passport-github2';
 import UserModel from "../dao/models/users.model.js";
 import {createHashValue, isValidPasswd} from "../utils/encrypt.js"
 
-const GITHUB_CLIENT_ID = '66673464c1a87d064e26'
-const GITHUB_CLIENT_SECRET = "d6aa01444450a005c35eba8ab4fd8adca6e8e2cb"
+import { appConfig } from "./config.js";
+const { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET } = appConfig;
+
 
 const initializePassport = () => {
 
